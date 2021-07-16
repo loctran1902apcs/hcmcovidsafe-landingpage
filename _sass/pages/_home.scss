@@ -1,0 +1,107 @@
+/* The animation code */
+@keyframes opacity {
+    from {
+        transform: translateY(-100vh);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+.container {
+    margin-top: 10px;
+}
+
+.topic-title {
+    padding: 40px;
+    @include until(769px) {
+        padding: 30px;
+    }
+}
+
+
+
+
+.intro_paragraph {
+    margin-top: 80px;
+    padding-left:15px;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    color: white;
+
+    & h1 {
+        font-weight: unset;
+        font-size: 2rem;
+    }
+
+    @include mobile() {
+        padding: 2rem;
+    }
+}
+
+
+.card-image {
+}
+
+.masonryGrid {
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 20px;
+
+    &--item {
+        display: inline-block;
+        margin: 15px;
+        width: calc( 33.3333% - 30px );
+        box-sizing: border-box;
+        overflow: hidden;
+        cursor: pointer;
+        @include until(769px) {
+            margin: 30px;
+            width: calc( 50% - 60px );
+        }
+        @include until(576px) {
+            width: calc( 100% );
+            margin-top: 0;
+        }
+    }
+}
+
+.card--href {
+    text-decoration: none;
+}
+
+.post-content {
+    padding: 20px 30px 30px 30px;
+    background-color: #000;
+    margin-top: -7px;
+    color: #fff;
+}
+
+.post-title {
+    font-size: 20px;
+    padding: 0;
+    margin-bottom: 10px;
+}
+.post-schedule {
+    font-size: 10px;
+    opacity: 0.6;
+    margin-bottom: 25px;
+}
+
+.post-table {
+    color: #fff;
+}
+
+.footer {
+    background-color: #000000;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    color: #fff;
+    padding: 40px;
+    p {
+        padding: 0;
+    }
+}
+
+

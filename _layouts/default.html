@@ -1,0 +1,28 @@
+---
+layout: compress
+---
+
+<!DOCTYPE html>
+<html data-current="{{ page.section }}" lang="en">
+
+  {% include head.html %}
+
+ {% include loader.html %}
+  <body>
+    <div id="main">
+    {% include header.html %}
+
+    <main class="bg-background">
+
+      {{ content }}
+
+    </main>
+    </div>
+
+
+<!--    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>-->
+<!--    <script>-->
+<!--      AOS.init();-->
+<!--    </script>-->
+  </body>
+</html>
